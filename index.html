@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a35">
+  <meta name="description" content="3C IT Solutions & Telecoms India Limited ERP portal">
+  <title>3CITS ERP — Business workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="3CITS ERP home">
+        <span class="brand-mark"><span>3</span><span>C</span></span>
+        <span class="brand-copy"><strong>3CITS</strong><small>BUSINESS SUITE</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="dashboard"><span class="nav-icon">▦</span><span>Overview</span></button>
+        <div class="nav-section-label">BUSINESS MODULES</div>
+        <button class="nav-item" data-page="sales"><span class="nav-icon">↗</span><span>Sales</span><span class="nav-count">8</span></button>
+        <button class="nav-item" data-page="services"><span class="nav-icon">◈</span><span>Services</span></button>
+        <button class="nav-item" data-page="pre-sales"><span class="nav-icon">⌕</span><span>Pre-sales</span></button>
+        <button class="nav-item" data-page="post-sales"><span class="nav-icon">⟲</span><span>Post-sales</span></button>
+        <button class="nav-item" data-page="crm"><span class="nav-icon">♧</span><span>CRM</span></button>
+        <button class="nav-item" data-page="marketing"><span class="nav-icon">◉</span><span>Marketing</span></button>
+        <button class="nav-item" data-page="support"><span class="nav-icon">☏</span><span>Support</span><span class="nav-count alert">5</span></button>
+        <button class="nav-item" data-page="administration"><span class="nav-icon">⚙</span><span>Administration</span></button>
+        <button class="nav-item" data-page="training"><span class="nav-icon">▤</span><span>Training</span></button>
+        <button class="nav-item" data-page="finance"><span class="nav-icon">₹</span><span>Finance</span></button>
+        <button class="nav-item" data-page="operations"><span class="nav-icon">⌘</span><span>Operations</span></button>
+        <button class="nav-item" data-page="hr"><span class="nav-icon">♙</span><span>HR</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><strong>Need a hand?</strong><p>Visit the help centre for guides and support.</p><button id="helpButton">Open help centre <span>↗</span></button></div>
+        <button class="nav-item settings-link" data-page="administration"><span class="nav-icon">⚙</span><span>Settings</span></button>
+        <div class="sidebar-user"><div class="avatar avatar-blue">AB</div><div class="user-meta"><strong>Anil Bhat</strong><small>Administrator</small></div><button class="more-button" aria-label="Account options">···</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumbCurrent">Overview</strong></div>
+        <div class="topbar-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search anything..." aria-label="Search anything"><kbd>⌘ K</kbd></label>
+          <button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button>
+          <div class="top-divider"></div>
+          <button class="company-switch"><span class="company-dot">3C</span><span>3C IT Solutions</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+
+      <section class="page-content" id="pageContent">
+        <div class="welcome-row">
+          <div><div class="eyebrow"><span class="live-dot"></span> THURSDAY, 27 NOVEMBER 2026</div><h1 id="pageTitle">Good morning, Anil <span class="wave">✦</span></h1><p class="page-subtitle" id="pageSubtitle">Here’s what’s happening across your business today.</p></div>
+          <div class="welcome-actions"><button class="button button-secondary" id="exportButton"><span>⇩</span> Export report</button><button class="button button-primary" id="quickAction"><span>＋</span> Quick action</button></div>
+        </div>
+
+        <div class="dashboard-view" id="dashboardView">
+          <section class="metric-grid" aria-label="Business summary">
+            <article class="metric-card"><div class="metric-top"><span>Total revenue</span><span class="metric-icon purple">₹</span></div><div class="metric-value">₹48, ó2,500</div><div class="metric-foot"><span class="trend positive">↗ 12.8%</span><span>vs last month</span><span class="metric-spark spark-purple">▁▂▁▃▂▄▃▅▆</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span>Active opportunities</span><span class="metric-icon blue">◇</span></div><div class="metric-value">126</div><div class="metric-foot"><span class="trend positive">↗ 8.2%</span><span>vs last month</span><span class="metric-spark spark-blue">▁▂▃▂▄▃▅▄▆</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span>Open support tickets</span><span class="metric-icon orange">◷</span></div><div class="metric-value">24</div><div class="metric-foot"><span class="trend negative">↘ 3.1%</span><span>vs last month</span><span class="metric-spark spark-orange">▅▄▆▃▄▂▃▂▁</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span>Team members</span><span class="metric-icon green">♙</span></div><div class="metric-value">84</div><div class="metric-foot"><span class="trend positive">↗ 4.5%</span><span>vs last month</span><span class="metric-spark spark-green">▁▂▂▃▃▄▃▅▆</span></div></article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel revenue-panel">
+              <div class="panel-heading"><div><h2>Revenue overview</h2><p>Track your business performance over time</p></div><div class="panel-tools"><button class="select-button" id="periodSelect">Last 6 months <span>⌄</span></button><button class="dots-button" aria-label="More revenue options">···</button></div></div>
+              <div class="chart-legend"><span><i class="legend-dot revenue-dot"></i> Revenue</span><span><i class="legend-dot target-dot"></i> Target</span><span class="chart-total">₹48.2L <small>total revenue</small></span></div>
+              <div class="chart-wrap"><div class="y-axis"><span>₹15L</span><span>₹10L</span><span>₹5L</span><span>₹0</span></div><div class="chart-area"><div class="grid-line line-1"></div><div class="grid-line line-2"></div><div class="grid-line line-3"></div><div class="grid-line line-4"></div><svg viewBox="0 0 720 220" preserveAspectRatio="none" role="img" aria-label="Revenue increased across the last six months"><defs><linearGradient id="fillRevenue" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#6657e8" stop-opacity=".2"/><stop offset="1" stop-color="#6657e8" stop-opacity="0"/></linearGradient></defs><path class="target-line" d="M0 148 C60 140 74 132 144 135 S220 120 288 125 S370 110 432 112 S515 100 576 102 S650 85 720 82"/><path class="revenue-fill" d="M0 182 C55 172 83 145 144 157 S222 110 288 124 S365 87 432 105 S510 61 576 76 S660 35 720 43 L720 220 L0 220 Z"/><path class="revenue-line" d="M0 182 C55 172 83 145 144 157 S222 110 288 124 S365 87 432 105 S510 61 576 76 S660 35 720 43"/><circle cx="720" cy="43" r="5" class="chart-point"/></svg><div class="x-axis"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div></div></div>
+            </article>
+
+            <article class="panel activity-panel"><div class="panel-heading"><div><h2>Recent activity</h2><p>Latest updates from your team</p></div><button class="text-button" id="viewActivity">View all <span>→</span></button></div><div class="activity-list">
+              <div class="activity-item"><div class="activity-avatar activity-purple">PK</div><div class="activity-copy"><p><strong>Priya Kapoor</strong> created a new opportunity</p><small>Cloud migration — Tata Communications</small></div><time>10m ago</time></div>
+              <div class="activity-item"><div class="activity-avatar activity-orange">RS</div><div class="activity-copy"><p><strong>Rahul Sharma</strong> closed a support ticket</p><small>#TKT-2048 · Network connectivity</small></div><time>32m ago</time></div>
+              <div class="activity-item"><div class="activity-avatar activity-blue">AM</div><div class="activity-copy"><p><strong>Arjun Mehta</strong> submitted an expense</p><small>₹12,450 · Client visit, Bengaluru</small></div><time>1h ago</time></div>
+              <div class="activity-item"><div class="activity-avatar activity-green">SK</div><div class="activity-copy"><p><strong>Sneha Kulkarni</strong> completed a training</p><small>Product certification · Level 2</small></div><time>2h ago</time></div>
+            </div></article>
+          </section>
+
+          <section class="lower-grid">
+            <article class="panel pipeline-panel"><div class="panel-heading"><div><h2>Sales pipeline</h2><p>Opportunity value by stage</p></div><button class="text-button" data-open="sales">View pipeline <span>→</span></button></div><div class="pipeline-total"><strong>₹1.84 Cr</strong><span class="trend positive">↗ 18.6%</span><small>weighted pipeline value</small></div><div class="pipeline-bars"><div class="pipeline-row"><span>Qualified</span><div class="bar-track"><i style="width:82%"></i></div><strong>₹72L</strong></div><div class="pipeline-row"><span>Proposal</span><div class="bar-track"><i style="width:64%"></i></div><strong>₹56L</strong></div><div class="pipeline-row"><span>Negotiation</span><div class="bar-track"><i style="width:44%"></i></div><strong>₹38L</strong></div><div class="pipeline-row"><span>New</span><div class="bar-track"><i style="width:31%"></i></div><strong>₹28L</strong></div></div></article>
+            <article class="panel tasks-panel"><div class="panel-heading"><div><h2>My tasks</h2><p><span id="taskCount">3 tasks</span> need your attention</p></div><button class="text-button" id="viewTasks">View all <span>→</span></button></div><div class="task-list"><label class="task-item"><input type="checkbox"><span class="custom-check"></span><span class="task-text"><strong>Review Q4 enterprise proposal</strong><small>Sales · Tata Communications</small></span><span class="priority high">High</span></label><label class="task-item"><input type="checkbox"><span class="custom-check"></span><span class="task-text"><strong>Approve October expense reports</strong><small>Finance · 4 pending approvals</small></span><span class="priority medium">Medium</span></label><label class="task-item"><input type="checkbox"><span class="custom-check"></span><span class="task-text"><strong>Schedule product onboarding</strong><small>Services · Reliance Jio</small></span><span class="priority low">Low</span></label></div><button class="add-task" id="addTask">＋ Add a task</button></article>
+          </section>
+          <footer class="page-footer"><span>© 2026 3C IT Solutions & Telecoms India Limited</span><span>ERP Portal <b>·</b> v1.0</span></footer>
+        </div>
+        <div id="moduleView" class="module-view" hidden></div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-kicker">3CITS ERP</div><h2 id="modalTitle">Create a new record</h2><p id="modalDescription">Choose an action to get started.</p><div class="quick-actions-grid" id="quickActionsGrid"></div></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
